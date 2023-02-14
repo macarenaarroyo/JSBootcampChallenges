@@ -42,8 +42,8 @@ describe('addUnknown', () => {
   });
 
   it('adds three negative numbers correctly', () => {
-    const returnedValue = addUnknown(3, 4, 5);
-    expect(returnedValue).to.equal(12);
+    const returnedValue = addUnknown(-3, -4, -5);
+    expect(returnedValue).to.equal(-12);
   });
 
   it('adds 5 numbers correctly', () => {
