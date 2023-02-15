@@ -36,7 +36,7 @@ describe('addUnknown', () => {
     expect(typeof addUnknown).to.equal('function');
   });
 
-  it('adds two numbrs correctly', () => {
+  it('adds two numbers correctly', () => {
     const returnedValue = addUnknown(2, 2);
     expect(returnedValue).to.equal(4);
   });
