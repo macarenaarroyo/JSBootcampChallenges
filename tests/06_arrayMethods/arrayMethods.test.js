@@ -103,9 +103,9 @@ describe('map', () => {
           name: 'Kramer',
           age: 22,
         }])).to.deep.equal(['Jerry can ride the ride',
-        'Sorry, Elaine cannot ride the ride',
-        'Sorry, George cannot ride the ride',
-        'Kramer can ride the ride']);
+          'Sorry, Elaine cannot ride the ride',
+          'Sorry, George cannot ride the ride',
+          'Kramer can ride the ride']);
       sinon.assert.calledOnce(spy);
     });
   });
@@ -268,7 +268,7 @@ describe('using reduce', () => {
   });
 });
 
-describe('find', () => {
+describe.only('find', () => {
   describe('calls the function findGreater that returns an object with price greater then 100', () => {
     const cart = [
       { item: 'robot', price: 50 },
